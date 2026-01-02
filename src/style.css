@@ -6,27 +6,35 @@
 
 body {
   font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
 }
 
 .header {
   width: 100%;
+  height: 60px;
 }
 
-.header_content {
+.header__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 50px;
 }
 
 .header__logo img {
   display: block;
+  width: 40px;
+  height: 40px;
 }
 
 .nav__list {
   display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start;
   list-style: none;
 }
 
@@ -39,12 +47,12 @@ body {
 }
 
 .nav__link {
-  display: flex;
+  display: inline-block;
   align-items: center;
   height: 60px;
+  line-height: 60px;
   text-decoration: none;
   color: #000;
-  text-transform: uppercase;
   position: relative;
 }
 
@@ -65,7 +73,8 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 2px;
+  height: 4px;
   width: 100%;
   background-color: var(--blue-color);
+  border-radius: 8px;
 }
